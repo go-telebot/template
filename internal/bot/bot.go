@@ -43,7 +43,7 @@ func (b *Bot) Start() {
 	// Middlewares
 	b.Use(middleware.Logger())
 	b.Use(middleware.AutoRespond())
-	b.Use(b.Middleware("ru"))
+	b.Use(b.Middleware("en"))
 
 	// Handlers
 	b.Handle("/start", b.onStart)
